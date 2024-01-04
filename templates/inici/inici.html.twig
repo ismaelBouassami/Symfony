@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pagina Principal
+{% endblock %}
+{% block stylesheets %}
+{{ parent() }}
+<link href="{{ asset('/css/estilsInici.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <h1 id="titolInici">Proyecto Symfony Equips 2n Daw</h1>
+    <p id="paragrafInici">Inicio programa gestion de equipos y miembros 2n Daw </br></br></br>
+     <img src="{{ asset('/images/equipo.jpg') }}" alt="Imagen de Inicio" class="imatgeInici">
+     </p>
+{% endblock %}
