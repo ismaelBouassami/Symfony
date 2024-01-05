@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Datos del Equipo{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/estilsEquip.css') }}">
+{% endblock %}
+
+{% block body %}
+
+    <h1 id="titolEquip">Equipo no ncontrado</h1>
+    <p class="paragrafEquip" >{{no_encontrado}}</p>
+    <p class="paragrafEquip">Proyecto 2n DAW<br><img src="{{ asset(imagen_ruta) }}" alt="Imagen del  null" class="imatgeEquip">
+</p>
+<div class="paragrafEquip">
+    <div class="line"><span class="bold">Codi:</span> {{ equip.codi }}</div>
+    <div class="line"><span class="bold">Nombre:</span> {{ equip.nom }}</div>
+    <div class="line"><span class="bold">Ciclo:</span> {{ equip.cicle }}</div>
+    <div class="line"><span class="bold">Curs:</span> {{ equip.curs }}</div>
+    <div class="line"><span class="bold">Miembros:</span> {{ equip.membres|join(', ') }}</div>
+</div>
+
+    {% endblock %}
+
