@@ -8,8 +8,17 @@
 {% endblock %}
 
 {% block body %}
-    <h1 id="titolInici">Proyecto Symfony Equips 2n Daw</h1>
-    <p id="paragrafInici">Inicio programa gestion de equipos y miembros 2n Daw </br></br></br>
-     <img src="{{ asset('/images/equipo.jpg') }}" alt="Imagen de Inicio" class="imatgeInici">
-     </p>
+    <h1 class="h1" id="titolInici">Proyecto Symfony Equips 2n Daw</h1>
+    <p class="paragraf" id="paragrafInici">Inicio programa gestion de equipos y miembros 2n Daw <br><br>
+        <img src="{{ asset('/images/equipo.jpg') }}" alt="Imagen de Inicio" class="imatgeInici">
+    </p>
+
+    <div class="container" id="nomeva">
+        <h1 class="h1 text-center" id="azul">Lista de Equipos</h1>
+        <ul class="list-group">
+            {% for equip in equips %}
+                <li class="list-group-item"><a class="text-decoration-none" href="{{ path('equip', {'codi': equip.codi}) }}">{{ equip.nom }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
 {% endblock %}
