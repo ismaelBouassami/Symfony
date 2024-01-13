@@ -8,6 +8,7 @@ h1#titolInici {
     background-color: white;
 }
 
+
 p#paragrafInici {
     width: 80%;
     border: solid black 1px;
@@ -41,26 +42,32 @@ h1#azul {
     text-align: center;
 }
 
-ul {
+#nomeva ul {
     list-style-type: none;
     padding: 0;
+   
+    display: flex;
+    flex-direction: column;
 }
 
-li {
+#nomeva li {
     margin: 10px 0;
 }
 
-a {
+#nomeva a {
+    
+    background-color: #DDD;
+    border-radius: 20px;
+
     text-decoration: none;
     color: black;
     font-weight: bold;
-    border: 1px solid #ccc;
     padding: 10px;
-    display: block;
-    text-align: center;
+   
 }
 
 a:hover {
-    background-color: #f0f0f0;
+    background-color: #e04f4f;
+    
 }
 

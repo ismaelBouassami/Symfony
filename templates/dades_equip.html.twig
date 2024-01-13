@@ -9,10 +9,15 @@
 
 {% block body %}
 
-    <h1 id="titolEquip">Equipo {{ equip.codi }}</h1>
-  
-   <p class="paragrafEquip">Proyecto 2n DAW<br><img src="{{ asset(imagen_ruta) }}" alt="Imagen del Equipo" class="imatgeEquip" style="width: 250px; height: 250px;"></p>
-</p>
+<h1 id="titolEquip">Equipo {{ equip.codi }}</h1>
+
+
+    <div class="paragrafEquip">
+  <p>Proyecto 2n DAW</p><br>
+   <h1 style="color:red;">Imatge Equipos</h1><br>
+   <img src="{{ asset(imagen_ruta) }}" alt="Imagen del Equipo" class="imatgeEquip" style="width: 250px; height: 250px;">
+   </div>
+
 <div class="paragrafEquip">
     <div class="line"><span class="bold">Codi:</span> {{ equip.codi }}</div>
     <div class="line"><span class="bold">Nombre:</span> {{ equip.nom }}</div>

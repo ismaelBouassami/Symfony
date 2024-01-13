@@ -13,11 +13,11 @@
         <img src="{{ asset('/images/equipo.jpg') }}" alt="Imagen de Inicio" class="imatgeInici">
     </p>
 
-    <div class="container" id="nomeva">
+    <div  id="nomeva">
         <h1 class="h1 text-center" id="azul">Lista de Equipos</h1>
-        <ul class="list-group">
+        <ul>
             {% for equip in equips %}
-                <li class="list-group-item"><a class="text-decoration-none" href="{{ path('equip', {'codi': equip.codi}) }}">{{ equip.nom }}</a></li>
+                <li class="center"><a class="text-decoration-none" href="{{ path('equip', {'codi': equip.codi}) }}">{{ equip.nom }}</a></li>
             {% endfor %}
         </ul>
     </div>

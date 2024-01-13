@@ -15,10 +15,23 @@ h1#titolEquip {
     text-align:center;
     padding:10px;
     background-color:#f2e7c3;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.imatgeEquip{
+    margin: 0 auto; 
+    display: block;
 }
 
 .line {
+    margin: 0 auto; 
+    display: block;
     margin-bottom: 10px;
+    border: 1px solid black;
+    width: 25%;
 }
 
 .bold {

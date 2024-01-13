@@ -7,6 +7,12 @@ parameters:
     locale: 'en'
     format_data_defecte: 'd/m/y H:i:s'
 services:
+
+    
+    App\Controller\EquipsController: # Reemplaza "TuController" con el nombre real de tu controlador
+        bind:
+            $dadesEquips: '@App\Service\ServeiDadesEquips'
+
     # default configuration for services in *this* file
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
